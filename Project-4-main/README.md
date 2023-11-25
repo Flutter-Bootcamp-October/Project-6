@@ -1,6 +1,15 @@
 ## Project Overview
    This app is designed to help users create personal profile and manage items of watches mainly that they want to purchase. it includes adding, editing, clearing and deleting products and updating profile. 
-   
+
+## New Features:
+1- all app events are now are dealt by Bloc no stateful widgets
+2- user can change theme of the app!
+
+![Simulator Screenshot - iPhone 15 Pro - 2023-11-25 at 22 30 27](https://github.com/Raff22/Project-6/assets/86999942/a570c919-2599-460e-97e4-1bf219688619)
+
+![Simulator Screenshot - iPhone 15 Pro - 2023-11-25 at 22 30 45](https://github.com/Raff22/Project-6/assets/86999942/ca2cfeca-c867-4ee9-9b6e-1360cd2d98c2)
+
+
 ## Screenshots
 
 1- welcome screen:
