@@ -1,0 +1,41 @@
+name: project_bloc
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.1.3 <4.0.0'
+
+dependencies:
+  badges: ^3.1.2
+  dot_navigation_bar: ^1.0.2
+  shared_preferences: ^2.2.2
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.3
+  flutter_pw_validator: ^1.6.0
+  glass: ^1.0.2+1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  assets:
+    - assets/
+  uses-material-design: true
+  fonts:
+    - family: NotoSerif
+      fonts:
+        - asset: fonts/NotoSerif_Condensed-ExtraLight.ttf
+        - asset: fonts/NotoSerif_SemiCondensed-SemiBold.ttf
+    - family: Lora
+      fonts:
+        - asset: fonts\Lora-Regular.ttf
+          
+
+
+
+        
