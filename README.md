@@ -1,4 +1,4 @@
-# Project-4 Submission:
+# Project-6 Submission:
 
 Project Overview:
    A watch shopping app. enables the user to create an account, sign in, add items to the shopping cart, and calculate the total to checkout.
@@ -90,6 +90,7 @@ Technologies Used:
   3- syncfusion_flutter_sliders: used to make the slider at the filter screen.
   4- syncfusion_flutter_core: dependent package for all the Syncfusion Flutter widgets
   5- dot_navigation_bar: used to customize the bottom navigation bar.
+  6- Bloc: To manage different states in the app
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
