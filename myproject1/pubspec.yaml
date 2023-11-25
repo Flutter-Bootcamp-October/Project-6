@@ -1,0 +1,50 @@
+name: shopingpriject
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.1.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_snake_navigationbar: ^0.6.1
+  google_nav_bar: ^5.0.6
+  dot_navigation_bar:
+  badges: ^3.1.2
+  shimmer: ^3.0.0
+  flutter_bloc: ^8.1.3
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    
+    - lib\assets\imges\img10.png
+
+    - lib\assets\imges\backgroung_img.jpg
+    - lib\assets\imges\img1.png
+    - lib\assets\imges\img2.png
+    - lib/assets/imges/img4.png
+    - lib\assets\imges\img5.png
+    - lib\assets\imges\img6.png
+    - lib\assets\imges\img7.png
+    - lib\assets\imges\img8.png
+    - lib\assets\imges\img9.png
+    - lib\assets\imges\img 11.png
+    - lib\assets\imges\madterimg.png
+    - lib\assets\imges\paypalimg.png
+  fonts:
+    - family: Unna
+      fonts:
+        - asset: lib\fonts\Unna-Bold.ttf
+          weight: 700
+        
+
+
