@@ -38,7 +38,7 @@ class SignUpScreen extends StatelessWidget {
                     SignInLogo(),
                     SizedBox(height: 24),
                     BlueBoldText(
-                      text: 'Let\'s Sign In',
+                      text: 'Let\'s Sign Up',
                       size: 32,
                     ),
                     Text(
