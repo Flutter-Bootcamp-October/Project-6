@@ -1,31 +1,44 @@
-# Project-6
+# Watch Store App
 
+This is a Flutter mobile application for a Watch Store. The app allows users to browse and purchase watches, manage their cart, update their profile information and change the app theme(dark/light mode). The app developed using BLoC state managemenet 
 
-## Description
+## Libraries Used
+- glass 1.0.2+1
+- dot_navigation_bar 1.0.2
+-  flutter_carousel_widget: ^2.1.2
+## Screens
 
-Your task is to create a Flutter app that demonstrates global data management for a shopping app. The app should allow users to add, view, update, and remove items from their shopping cart. Global data management should be used to efficiently store and manage the shopping app items. And Use BLoC State Management in the project.
+### Splash Screen
+The splash screen is displayed when the app is launched and provides a visual transition before entering the main app.
+![Alt text](Screenshot_1699166967.png)
 
-
-## Schedule & Deadlines
-
-- **Project Submission Deadline:** 26/11/2023 – 9:59 PM
-
-## Minimum Requirements
-
-
-- **Correct Structure:** Ensure that the application is built with the appropriate structure. Follow Flutter's best practices for organizing code and project files.
-- **Clean Code:** Write code that is clear, well-organized, and scalable. Use meaningful variable and function names and follow standard coding conventions to improve code readability.
-- **Applying Concepts:** Make proper use of programming concepts and techniques. Implement efficient algorithms and follow Flutter's design patterns to create a robust and functional shopping list app.
-- **Applying BLoC:** Implement state management (BLoC) in Auth, Home, Product details, Search, Cart, and Profile screens.
-- **Applying Change Theme:** The user should be able to change the theme between Light and Dark Theme.
-
-
-## Delivery Requirements
-
-- **Upload the Entire Project:** Ensure that you upload the complete project, which includes all necessary code files, assets, and configurations, to the repository on GitHub.
-- **Readme File:**
-  - Create a README.md file in the root directory of your GitHub repository.
-  - Provide a detailed and well-structured description of the project in the README file, including the following sections:
-    - **Project Overview:** Briefly describe what the shopping list app is about and its main features. Give readers a clear idea of the purpose and functionality of the app.
-    - **Screenshots:** Include relevant screenshots of the app to showcase its appearance and functionalities. Visuals can help users understand the app's design and layout.
-
+### LogIn
+The login screen allows users to authenticate themselves using their credentials.
+ ![Alt text](Screenshot_1699166977.png)
+### SignUp
+The signup screen enables new users to create an account by providing their details.
+![Alt text](Screenshot_1699166971-1.png)
+### HomeScreen
+The home screen is the main screen of the app, where users can browse and explore different watches.
+![Alt text](Screenshot_1699167008.png)
+### Product Details
+The product details screen displays detailed information about a specific watch, including its images, description, and price.
+![Alt text](Screenshot_1699167145.png)
+### Cart Screen
+The cart screen shows the items added to the user's cart. Users can apply a coupon by entering "Flutter" in the designated field.
+![Alt text](Screenshot_1699167161.png)
+### Profile Screen
+The profile screen displays the user's profile information, such as name, email address,mobile number, and password. Users can update their information on this screen.
+![Alt text](Screenshot_1699167180.png)
+### Checkout Screen
+The checkout screen allows users to review their selected items, enter shipping information, and proceed with the purchase.
+![Alt text](Screenshot_1699167190.png)
+### Filter Screen
+The filter screen provides options for users to filter watches based on specific criteria.
+![Alt text](Screenshot_1699167204.png)
+### Search Screen
+The search screen allows users to search for watches.
+![Alt text](Screenshot_1699167217.png)
+### Search Screen
+Home screen in dark mode.
+![Alt text](image.png)
