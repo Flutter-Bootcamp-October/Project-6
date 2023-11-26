@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:project_4/blocs/cart/bloc/cart_bloc.dart';
+import 'package:project_4/blocs/cart/bloc/cart_event.dart';
 import 'package:project_4/blocs/cart/bloc/cart_state.dart';
 
 import 'package:project_4/models/watch_model.dart';
@@ -71,21 +72,26 @@ class OrderScreenState extends State<OrderScreen> {
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      floatingActionButton: CustomButton(
-        content: 'Checkout',
-        hasIcon: false,
-        onPressedFunc: () {
-          //add  reset cart state?
-          if (cartList.isNotEmpty) {
+      floatingActionButton: BlocListener<CartBloc, CartState>(
+        listener: (context, state) {
+          if (state is CheckoutCartState) {
             Navigator.push(
                 context,
                 MaterialPageRoute(
                     builder: (context) => const CheckOutScreen()));
-          } else {
-            ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text("Your cart is empty")));
+          } else if (state is CartErrorState) {
+            ScaffoldMessenger.of(context)
+                .showSnackBar(SnackBar(content: Text(state.message)));
           }
         },
+        child: CustomButton(
+          content: 'Checkout',
+          hasIcon: false,
+          onPressedFunc: () {
+            //checkout
+            context.read<CartBloc>().add(CheckoutCartEvent(widget.watch!));
+          },
+        ),
       ),
     );
   }

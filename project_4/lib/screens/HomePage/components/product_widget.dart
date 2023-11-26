@@ -19,7 +19,6 @@ class ProductWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      //move to product details
       onTap: () {
         Navigator.push(
           context,

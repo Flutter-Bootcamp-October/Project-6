@@ -4,7 +4,7 @@ import 'package:project_4/blocs/cart/bloc/cart_state.dart';
 import 'package:project_4/data/global_data.dart';
 
 class CartBloc extends Bloc<CartEvent, CartState> {
-  CartBloc() : super(InitialState(counter: 1)) {
+  CartBloc() : super(InitialCartState(counter: 1)) {
     num count = 1;
     // add to cart
     on<AddItemEvent>((event, emit) {
@@ -70,6 +70,15 @@ class CartBloc extends Bloc<CartEvent, CartState> {
       event.watch.count = 0;
       cartList.remove(event.watch);
       emit(UpdateCartState(counter: 1));
+    });
+
+    //reset cart
+    on<CheckoutCartEvent>((event, emit) {
+      if (cartList.isNotEmpty) {
+        emit(CheckoutCartState(counter: event.watch.count));
+      } else {
+        emit(CartErrorState(counter: 0, message: "your cart is empty"));
+      }
     });
   }
 }

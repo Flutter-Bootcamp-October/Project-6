@@ -25,3 +25,7 @@ class DecreseEvent extends CartEvent {
 class RemoveItemEvent extends CartEvent {
   RemoveItemEvent(super.watch);
 }
+
+class CheckoutCartEvent extends CartEvent{
+  CheckoutCartEvent(super.watch);
+}

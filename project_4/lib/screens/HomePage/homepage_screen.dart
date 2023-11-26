@@ -27,7 +27,7 @@ class HomePageScreen extends StatelessWidget {
     return Scaffold(
       appBar: homeAppBarWidget(context: context),
       body: Padding(
-        padding: const EdgeInsets.all(18),
+        padding: const EdgeInsets.symmetric(horizontal: 18),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
