@@ -1,31 +1,32 @@
-# Project-6
+# shopping_app
 
 
-## Description
-
-Your task is to create a Flutter app that demonstrates global data management for a shopping app. The app should allow users to add, view, update, and remove items from their shopping cart. Global data management should be used to efficiently store and manage the shopping app items. And Use BLoC State Management in the project.
-
-
-## Schedule & Deadlines
-
-- **Project Submission Deadline:** 26/11/2023 – 9:59 PM
-
-## Minimum Requirements
+Welcome Screen 
+![image](https://github.com/badrsh980/Project-6/assets/60719639/912e5581-5e81-4000-956f-42743c9dc837)
 
 
-- **Correct Structure:** Ensure that the application is built with the appropriate structure. Follow Flutter's best practices for organizing code and project files.
-- **Clean Code:** Write code that is clear, well-organized, and scalable. Use meaningful variable and function names and follow standard coding conventions to improve code readability.
-- **Applying Concepts:** Make proper use of programming concepts and techniques. Implement efficient algorithms and follow Flutter's design patterns to create a robust and functional shopping list app.
-- **Applying BLoC:** Implement state management (BLoC) in Auth, Home, Product details, Search, Cart, and Profile screens.
-- **Applying Change Theme:** The user should be able to change the theme between Light and Dark Theme.
+Sing up using bloc
+![image](https://github.com/badrsh980/Project-6/assets/60719639/47a716c8-ad28-4b7f-9005-f5a86f68bc72)
+
+Sing in using bloc
+![image](https://github.com/badrsh980/Project-6/assets/60719639/76a41f35-1e52-4d9c-8c97-0e04a88f5274)
+
+home page using bloc
+![image](https://github.com/badrsh980/Project-6/assets/60719639/0e19c305-e496-4309-95db-43842e666300)
 
 
-## Delivery Requirements
+Search Screen using bloc
+![image](https://github.com/badrsh980/Project-6/assets/60719639/8c507c8a-e3be-4f00-9c00-1ab4cfe1f30a)
 
-- **Upload the Entire Project:** Ensure that you upload the complete project, which includes all necessary code files, assets, and configurations, to the repository on GitHub.
-- **Readme File:**
-  - Create a README.md file in the root directory of your GitHub repository.
-  - Provide a detailed and well-structured description of the project in the README file, including the following sections:
-    - **Project Overview:** Briefly describe what the shopping list app is about and its main features. Give readers a clear idea of the purpose and functionality of the app.
-    - **Screenshots:** Include relevant screenshots of the app to showcase its appearance and functionalities. Visuals can help users understand the app's design and layout.
+profile uing Update Profile Bloc  and Theme Bloc + shared_preferences
+![image](https://github.com/badrsh980/Project-6/assets/60719639/6752ab8e-33c6-43b4-a40b-7b3d5970c852)
 
+ View Profuct using  Card Shop Bloc
+![image](https://github.com/badrsh980/Project-6/assets/60719639/03e4dc48-b5f9-499e-8097-01782aa44e05)
+
+
+my order using  Card Shop Bloc
+![image](https://github.com/badrsh980/Project-6/assets/60719639/2f6f5be4-eb69-46fb-a7cb-1f6a01b54051)
+
+checkout using Card Shop Bloc
+![image](https://github.com/badrsh980/Project-6/assets/60719639/d22f54c1-3df7-49d4-8bca-70fca53792cc)
