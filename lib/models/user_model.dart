@@ -1,23 +1,17 @@
+import 'package:shopping_app/models/product_model.dart';
+
 class User {
-  final String name, email, password, mobileNumber, userAvatar;
-  final List<Map> address;
+  String fullName;
+  String email;
+  String password;
+  String? imagePath;
+  String mobileNumber;
+  List<Product> cart = [];
 
   User(
-      {required this.address,
-      required this.userAvatar,
-      required this.email,
-      required this.password,
+      {required this.email,
+      required this.fullName,
+      this.imagePath,
       required this.mobileNumber,
-      required this.name});
-
-  factory User.fromJson(Map json) {
-    return User(
-      email: json["email"],
-      password: json["password"],
-      mobileNumber: json["mobileNumber"],
-      name: json["name"],
-      userAvatar: json["userAvatar"],
-      address: [json["address"]],
-    );
-  }
+      required this.password});
 }
