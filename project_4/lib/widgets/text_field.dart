@@ -20,13 +20,16 @@ class CustomTextField extends StatelessWidget {
       obscureText: isPassword,
       controller: controller,
       decoration: InputDecoration(
-        
           fillColor: const Color.fromARGB(101, 255, 255, 255),
           filled: true,
           floatingLabelBehavior: FloatingLabelBehavior.always,
           suffixIcon: Icon(icon),
-          label: Text(lable),
+          label: Text(
+            lable,
+            style: const TextStyle(color: Colors.black),
+          ),
           hintText: hint,
+          hintStyle: const TextStyle(color: Colors.black),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(16),
           ),

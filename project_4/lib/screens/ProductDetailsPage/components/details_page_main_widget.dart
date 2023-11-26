@@ -53,7 +53,7 @@ class DetailsPageMainWidget extends StatelessWidget {
                         children: [
                           CircleIcon(
                               //decrease event
-                              iconData: Icons.remove,
+                              iconData: Icons.remove, 
                               onPressedFunc: () {
                                 context
                                     .read<CartBloc>()

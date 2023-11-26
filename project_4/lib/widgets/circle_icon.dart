@@ -25,7 +25,7 @@ class CircleIcon extends StatelessWidget {
           ),
         ),
         child: Shimmer.fromColors(
-          baseColor: Colors.white,
+          baseColor: Colors.black,
           highlightColor: Colors.grey,
           child: IconButton(
             onPressed: onPressedFunc,

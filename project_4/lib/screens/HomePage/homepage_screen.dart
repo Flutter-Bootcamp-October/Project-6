@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:project_4/blocs/theme/bloc/theme_bloc.dart';
+import 'package:project_4/blocs/theme/bloc/theme_event.dart';
 import 'package:project_4/data/global_data.dart';
 import 'package:project_4/data/watch_data_set.dart';
 import 'package:project_4/models/watch_model.dart';
@@ -9,16 +12,6 @@ import 'components/product_list_widget.dart';
 
 class HomePageScreen extends StatelessWidget {
   const HomePageScreen({super.key});
-
-  // edit this!!!!!!!!!!!!!!!
-  // void initState() {
-  //   if (watchesList.isEmpty) {
-  //     for (var element in watches) {
-  //       watchesList.add(Watch.fromJson(element));
-  //     }
-  //   }
-  //   super.initState();
-  // }
 
   getData() {
     if (watchesList.isEmpty) {
@@ -32,32 +25,58 @@ class HomePageScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     getData();
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: homeAppBarWidget(context: context),
-      body: const Padding(
-        padding: EdgeInsets.all(18),
+      body: Padding(
+        padding: const EdgeInsets.all(18),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Hello",
-              style: TextStyle(
-                  fontSize: 28,
-                  color: Color(0xff294475),
-                  fontFamily: 'DMSerifText'),
+            Row(
+              children: [
+                const Text(
+                  "Hello",
+                  style: TextStyle(
+                      fontSize: 28,
+                      color: Color(0xff294475),
+                      fontFamily: 'DMSerifText'),
+                ),
+                const Spacer(),
+                IconButton(
+                  onPressed: () {
+                    context
+                        .read<ThemeBloc>()
+                        .add(ChangeThemeEvent(themeText: "light"));
+                  },
+                  icon: const Icon(
+                    Icons.sunny,
+                    color: Colors.amber,
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {
+                    context
+                        .read<ThemeBloc>()
+                        .add(ChangeThemeEvent(themeText: "dark"));
+                  },
+                  icon: const Icon(
+                    Icons.nightlight_round_outlined,
+                    color: Colors.black,
+                  ),
+                )
+              ],
             ),
-            Text(
+            const Text(
               "Choose Your Top Brands",
               style: TextStyle(fontSize: 23, fontFamily: 'DMSerifText'),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            CategoryWidget(),
-            SizedBox(
+            const CategoryWidget(),
+            const SizedBox(
               height: 10,
             ),
-            SingleChildScrollView(
+            const SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
