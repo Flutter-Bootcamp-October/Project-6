@@ -7,11 +7,13 @@ import 'package:project_4/blocs/theme/bloc/theme_bloc.dart';
 import 'package:project_4/blocs/theme/bloc/theme_event.dart';
 import 'package:project_4/blocs/theme/bloc/theme_state.dart';
 import 'package:project_4/blocs/user/bloc/user_bloc.dart';
+import 'package:project_4/helper/bloc_observor.dart';
 import 'package:project_4/screens/sign_in_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 late SharedPreferences pref;
 void main() async {
+  Bloc.observer = MyBlocObserver();
   WidgetsFlutterBinding.ensureInitialized();
   pref = await SharedPreferences.getInstance();
   runApp(const MainApp());
