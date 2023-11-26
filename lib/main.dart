@@ -9,6 +9,7 @@ import 'package:shopping_app/data/global.dart';
 import 'package:shopping_app/models/product_model.dart';
 import 'package:shopping_app/screens/search_screen.dart';
 import 'package:shopping_app/screens/signup_screen.dart';
+import 'package:shopping_app/screens/welcome_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -46,7 +47,7 @@ class MainApp extends StatelessWidget {
           return MaterialApp(
             theme: state.themeData,
             debugShowCheckedModeBanner: false,
-            home: SignUpScreen(
+            home: WelcomeScreen(
               product: product,
             ),
           );
