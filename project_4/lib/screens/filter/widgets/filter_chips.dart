@@ -33,9 +33,13 @@ class _FilterChipsState extends State<FilterChips> {
                 backgroundColor: (selected == index)
                     ? const Color(0xfffccf78)
                     : const Color.fromARGB(255, 241, 241, 241),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(18)),
                 padding: const EdgeInsets.all(14),
-                label: Text(widget.chipList[index]),
+                label: Text(
+                  widget.chipList[index],
+                  style: const TextStyle(color: Colors.black),
+                ),
               ),
             ),
           ),

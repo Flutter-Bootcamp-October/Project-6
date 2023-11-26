@@ -109,7 +109,7 @@ class SignInScreen extends StatelessWidget {
                   ),
                   const Padding(
                     padding: EdgeInsets.only(top: 16),
-                    child: Text('OR'),
+                    child: Text('OR', style: TextStyle(color: Colors.black)),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 16),
@@ -143,7 +143,8 @@ class SignInScreen extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const Text('New to ADS Watch?'),
+                        const Text('New to ADS Watch?',
+                            style: TextStyle(color: Colors.black)),
                         Padding(
                           padding: const EdgeInsets.only(left: 4),
                           child: TextButton(

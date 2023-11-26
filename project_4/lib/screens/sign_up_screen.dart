@@ -19,7 +19,7 @@ class SignUpScreen extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         child: Stack(children: [
-          Image.asset('assets/images/up.png'),
+          Image.asset('assets/images/up.png', fit: BoxFit.cover),
           Padding(
             padding: const EdgeInsets.all(16),
             child: Center(
@@ -115,7 +115,10 @@ class SignUpScreen extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const Text('Joined us before?'),
+                        const Text(
+                          'Joined us before?',
+                          style: TextStyle(color: Colors.black),
+                        ),
                         Padding(
                           padding: const EdgeInsets.only(left: 4),
                           child: TextButton(

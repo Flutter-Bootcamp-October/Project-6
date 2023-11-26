@@ -88,7 +88,6 @@ class OrderScreenState extends State<OrderScreen> {
           content: 'Checkout',
           hasIcon: false,
           onPressedFunc: () {
-            //checkout
             context.read<CartBloc>().add(CheckoutCartEvent(widget.watch!));
           },
         ),

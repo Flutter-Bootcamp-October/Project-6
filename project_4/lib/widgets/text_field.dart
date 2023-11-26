@@ -23,13 +23,15 @@ class CustomTextField extends StatelessWidget {
           fillColor: const Color.fromARGB(101, 255, 255, 255),
           filled: true,
           floatingLabelBehavior: FloatingLabelBehavior.always,
-          suffixIcon: Icon(icon),
+          suffixIcon: Icon(
+            icon,
+            color: Colors.black,
+          ),
           label: Text(
             lable,
             style: const TextStyle(color: Colors.black),
           ),
           hintText: hint,
-          hintStyle: const TextStyle(color: Colors.black),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(16),
           ),

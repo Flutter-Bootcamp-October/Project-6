@@ -10,12 +10,12 @@ class SearchFieldWidget extends StatelessWidget {
     return TextField(
       textAlign: TextAlign.left,
       decoration: InputDecoration(
-          fillColor: Colors.white,
           filled: true,
           prefixIcon: const Padding(
             padding: EdgeInsets.only(left: 20),
             child: Icon(
               Icons.search,
+              color: Colors.black,
               size: 30,
             ),
           ),
